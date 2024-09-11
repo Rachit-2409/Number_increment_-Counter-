@@ -1,0 +1,49 @@
+*{
+    font-family: "Inria Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-size: 45px;
+    margin: 20px 0 ;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.box{
+    text-align: center;
+    width: 300px;
+    background-color: #212121;
+    padding: 30px;
+    color: #fff;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.box::after{
+    height: 10px;
+    width: 100%;
+    background-color: rgb(252, 23, 23);
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 768px) {
+    #container{
+        background: black;
+        height: 100vh;
+        width: 100%;
+    }
+}
